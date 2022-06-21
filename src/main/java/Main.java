@@ -1,4 +1,5 @@
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.time.LocalDateTime;
@@ -15,6 +16,7 @@ public class Main {
 
         String pathHtml = "template.html";
         String baseuri = "/";
+        new File("results").mkdirs();
         String namePdfGenerated = "results/result.pdf";
 
         try (
