@@ -15,7 +15,7 @@ public class Main {
 
         String pathHtml = "template.html";
         String baseuri = "/";
-        String namePdfGenerated = "result.pdf";
+        String namePdfGenerated = "results/result.pdf";
 
         try (
                 ByteArrayOutputStream outputStream = (ByteArrayOutputStream) PdfGenerator.generatePdf(pathHtml, baseuri, variables);
