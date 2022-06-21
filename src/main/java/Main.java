@@ -10,7 +10,7 @@ public class Main {
 
         // create thymeleaf variables
         HashMap<String, Object> variables = new HashMap();
-        variables.put("name", "Lucas Aries");
+        variables.put("name", "Kallu-A");
         variables.put("date", LocalDateTime.now().toLocalDate().toString());
 
         String pathHtml = "template.html";
