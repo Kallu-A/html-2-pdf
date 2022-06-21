@@ -18,7 +18,7 @@ public class PdfGenerator {
      * Generate a PDF file from a HTML string
      * @param pathHtml path to the .html file
      * @param baseUri path for annex resources like css js (must be a URI like https://xxx/)
-     * @param variables path for annex resources like css js (must be a URI like https://xxx/)
+     * @param variables work with a key, value  key is the same a used by thymeleaf
      * @return outputstream of the pdf file
      * @throws IOException
      */
@@ -29,7 +29,7 @@ public class PdfGenerator {
     /**
      * Parse the .html file with thymeleaf to a string with thymeleaf parse
      * @param path to the .html file
-     * @param variables path for annex resources like css js (must be a URI like https://xxx/)
+     * @param variables work with a key, value  key is the same a used by thymeleaf
      * @return string of the html file parsed
      */
     private static String parseHtmlThymeLeafToString(String path, HashMap<String, Object> variables) {
